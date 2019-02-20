@@ -1,0 +1,29 @@
+.login-container{
+  width: 40%;
+  border: 1px solid #CCC;
+  min-height: 30%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 28%;
+  top: 33%;
+}
+.container {
+  padding: 35px !important;
+  width: 50% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputfield {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.uui-button {
+  background: lightblue !important;
+  color: black !important;
+  width:  18% !important;
+}
