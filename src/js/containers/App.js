@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Login from '../components/Login/Login.js';
 import HomePage from '../components/Home/Homepage.js';
+import QuestionBank from '../components/QuestionBank/QuestionBank';
 import { Provider } from "react-redux";
 import store from "../store/store";
 import AuthorizedRoutes from "../routes/AuthorizedRoutes";
 import UnauthorizedLayout from "../layout/UnauthorizedLayout";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter, BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import './App.css';
 
@@ -40,13 +41,14 @@ class App extends Component {
                   </header>
                   <div className="uui-main-container">
                     <main>
-                    <BrowserRouter>
+                    <HashRouter>
                     <Switch>
-                        <Route path="/login" component={UnauthorizedLayout} />
+                        <Route exact path="/login" component={UnauthorizedLayout} />
                         <AuthorizedRoutes path="/home" component={HomePage} />
+                        <AuthorizedRoutes path="/qbank" component={QuestionBank} />
                         <Redirect to="/login" />
                     </Switch>
-                      </BrowserRouter>
+                      </HashRouter>
                     </main>
                   </div>
                   <footer>

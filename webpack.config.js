@@ -17,6 +17,7 @@ module.exports = {
 		contentBase: DIST_DIR,
         port: 3000,
         open: true,
+        historyApiFallback: true,
     },
     resolve: {
         extensions: ['.js', '.jsx']

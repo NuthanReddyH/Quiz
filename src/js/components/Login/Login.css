@@ -9,18 +9,29 @@
 }
 .container {
   padding: 35px !important;
-  width: 50% !important;
   display: flex;
   flex-direction: column;
+ 
 }
 
 .inputfield {
-  width: 50%;
+  
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+.login-container input{
+  width: 95%;
+
+}
+.login-container label{
+  width: 53%;
+  display: block;
+}
+.login-inner{
+  padding: 40px;
 }
 .uui-button {
   background: lightblue !important;

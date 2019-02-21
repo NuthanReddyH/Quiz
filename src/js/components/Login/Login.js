@@ -52,7 +52,7 @@ render() {
   return (
     <div className="login-container">
     <form onSubmit={this.onSubmit}>
-    <div className="container">
+    <div className="login-inner">
   <label for="uname"><b>Username</b></label>
   <input className="inputfield" type="text" placeholder="Enter Username" name="username" required value={this.state.username}   onChange={this.onChange} />
 
