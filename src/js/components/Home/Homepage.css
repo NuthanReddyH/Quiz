@@ -1,0 +1,15 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    flex-direction: column;
+    padding-left: 40%;
+}
+.text1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.text2 {
+    font-size: 20px;
+    padding-left: 30px;
+}
