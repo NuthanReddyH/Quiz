@@ -6,6 +6,7 @@ var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
 
 module.exports = {
+    mode: 'development',
     entry: SRC_DIR + "/js/index",
     output: {
         path: DIST_DIR,

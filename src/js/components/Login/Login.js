@@ -59,7 +59,7 @@ render() {
   <label for="psw"><b>Password</b></label>
   <input className="inputfield" type="password" placeholder="Enter Password" name="password" required value={this.state.password}  onChange={this.onChange}/>
 
-  <button className="uui-button" type="submit">Login</button>
+  <button className="uui-button blue" type="submit">Login</button>
   </div>
 </form>
 </div>

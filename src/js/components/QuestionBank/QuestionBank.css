@@ -1,11 +1,29 @@
 .leftBar {
     width: 21%;
     height: 100%;
-    display: inline-block;
+    float: left;
     padding: 30px;
+    /* border: 1px solid black; */
 }
 .rightBar {
     width: 70%;
-    display: inline-block;
+    float: left;
     padding: 30px;
+    margin: 11% 0 0 0;
 }
+.questionBtnContainer{
+    padding:0 25% 0 0;
+    text-align: center;
+}
+.question-container {
+    /* border: 1px solid red; */
+}
+
+.disable {
+    background: #e5e5e5 !important;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

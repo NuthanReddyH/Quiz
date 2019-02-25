@@ -1,0 +1,23 @@
+.uui-input-group.vertical{
+    display: block;
+    min-width: 90%;
+    margin: 0 0 20px 0;
+}
+.uui-input-group > label, .dropdownContainer > label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+.uui-checkbox{
+    line-height: 33px;
+}
+.dropdownContainer{
+    margin: 0 0 20px 0;
+}
+.dropdownContainer > label{
+    display: block;
+    line-height: 36px;
+}
+.grey{
+    color: #CCC;
+}
