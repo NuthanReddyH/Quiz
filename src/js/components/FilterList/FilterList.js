@@ -11,11 +11,27 @@ class FilterList extends Component {
         }
         this.onChange = this.onChange.bind(this);
     }
-    onChange(id) {
-        console.log(id);
-        this.setState({
-            checkedValue: id
-        })
+    onChange(item) {
+        if(item.id === this.state.checkedValue) {
+            this.setState({
+                checkedValue: ""
+            });
+            if(this.props.onClick) {
+                this.props.onClick(item,false);
+            }
+        }
+        else {
+            this.setState({
+                checkedValue: item.id
+            });
+            if(this.props.onClick) {
+                this.props.onClick(item,true);
+            }
+        }
+        
+        
+        
+        
         
     }
     render() {
@@ -26,7 +42,7 @@ class FilterList extends Component {
                         <label>{label}</label>
                         {list.map((item,index) => {
                             return (<p className="uui-checkbox  square-skin">
-                            <input type="checkbox" id={item.id} checked={this.state.checkedValue === item.id} onChange={() => this.onChange(item.id)} />
+                            <input type="checkbox" id={item.id} checked={this.state.checkedValue === item.id} onChange={() => this.onChange(item)} />
                                 <label for={item.id}>{item.type}</label>
                             </p> )
                         })}

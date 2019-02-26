@@ -2,21 +2,22 @@
     width: 21%;
     height: 100%;
     float: left;
-    padding: 30px;
     /* border: 1px solid black; */
 }
 .rightBar {
     width: 70%;
     float: left;
-    padding: 30px;
-    margin: 11% 0 0 0;
+    padding: 0;
+    margin: 0;
 }
+.rightInnerWrapper, .leftInnerWrapper{
+      padding: 30px;
+  }
+
 .questionBtnContainer{
     padding:0 25% 0 0;
     text-align: center;
-}
-.question-container {
-    /* border: 1px solid red; */
+    margin: 16% 0 0 0;
 }
 
 .disable {
@@ -27,3 +28,11 @@
     clear: both;
     display: table;
   }
+  .filterDivider{
+    border-right: 1px solid #5d5b5b;
+    padding: 0px 7px;
+  }
+  span.filterDivider:last-child{
+    border-right: none;
+  }
+ 
